@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: azure;
 }
 
@@ -33,9 +33,10 @@ nav {
     font-weight: 500px;
     line-height: 21px;
 }
-.items a img{
-vertical-align: middle;
-color: #222222;
+
+.items a img {
+    vertical-align: middle;
+    color: #222222;
 }
 
 .btn button {
@@ -55,21 +56,85 @@ color: #222222;
 /* nav end */
 
 /* header start */
-.header{
+.header {
     height: 100vh;
-    background-image:url(./ass/header\ img.png);
+    background-image: url(./ass/header\ img.png);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
-.header::before{
+
+.header::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.35);
 }
-.heading{
-    color: #434141;
+
+.heading-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
     position: absolute;
-    font-size: 52px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
+.heading-button h1 {
+    color: #ffffff;
+    font-size: 72px;
+}
+
+.heading-button button {
+    font-size: 24px;
+    background-color: #FF4A52;
+    color: #fff;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 43px;
+    cursor: pointer;
+}
+
 /* header end */
+
+/* features cards start */
+.features-card {
+    background-color: aqua;
+    width: 207px;
+    height: 242px;
+    border-radius: 8px;
+    padding: 24px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-card .heading1 {
+    text-align: center;
+}
+
+.features-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #222222;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.features-card h3 span {
+    color: #FF4A52;
+}
+
+.features-cards .subheading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #222222;
+    font-style: normal;
+}
+
+/* features cards end */
