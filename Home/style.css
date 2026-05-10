@@ -150,6 +150,7 @@ nav {
 }
 
 /* features cards end */
+
 /* Our Story start */
 .story-container {
     background-color: aqua;
@@ -157,23 +158,31 @@ nav {
     height: 430px;
     margin-top: 180px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .center {
     display: flex;
     flex-direction: column;
     width: 540px;
+    text-align: center;
 }
-.heading-design{
+
+.heading-design {
     /* display: flex;
     flex-direction: column; */
     width: 540px;
+    background-color: aliceblue;
+    padding-bottom: 32px;
 }
-.heading-design h1{
-font-size: 48px;
-font-weight: 600;
-line-height: 56px;
-color: #222222;
+
+.heading-design h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #222222;
+
 }
 
 .our-subheading {
@@ -181,6 +190,41 @@ color: #222222;
     font-weight: 400;
     line-height: 30px;
     color: #666;
+    justify-content: center;
+    align-items: center;
+}
+
+.features3 {
+    background-color: antiquewhite;
+    width: 540px;
+    height: 106px;
+    padding-top: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.fea-1 {
+    width: 160px;
+    height: 106px;
+    position: relative;
+
+}
+
+.hea-subhea-con {
+    width: 160px;
+    gap: 6px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hea-fea h1 {
+    font-size: 42px;
+    color: #FF4A52;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 56px;
 }
 
 /* Our Story end */
