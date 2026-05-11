@@ -164,12 +164,14 @@ nav {
     padding: 0 48px;
     position: relative;
 }
-.story-content{
+
+.story-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 26px;
 }
+
 .pizza {
     position: absolute;
     right: 48px;
@@ -237,18 +239,55 @@ nav {
     font-style: normal;
     line-height: 56px;
 }
+
 /* Our Story end */
 /* Trending Recipes start */
-.trending-cards{
+.trending-cards {
     background-color: aquamarine;
     display: flex;
     gap: 32px;
     justify-content: center;
 }
-.card-1{
+
+.bcg-img img {
+    margin-top: 122px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bcg-img {
+    position: relative;
+    margin-top: 122px;
+    top: 72px;
+}
+
+.bcg-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+.img-des{
+    background-color: #e13841;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.img-des h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #fff;
+}
+.card-1 {
     width: 350px;
     height: 375px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     display: flex;
     padding: 32px;
     border-radius: 8px;
@@ -256,4 +295,44 @@ nav {
     align-items: center;
     text-align: center;
 }
+
+.heading-card h1 {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.subhead-card {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.tren-btn {
+    background-color: #FF4A52;
+    padding: 10px 24px;
+    border-radius: 43px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.tren-btn:hover {
+    background-color: #e13841;
+}
+
+.tren-btn button {
+    color: #fff;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
 /* Trending Recipes end */
