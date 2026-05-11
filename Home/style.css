@@ -237,5 +237,23 @@ nav {
     font-style: normal;
     line-height: 56px;
 }
-
 /* Our Story end */
+/* Trending Recipes start */
+.trending-cards{
+    background-color: aquamarine;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+.card-1{
+    width: 350px;
+    height: 375px;
+    background-color: antiquewhite;
+    display: flex;
+    padding: 32px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Trending Recipes end */
