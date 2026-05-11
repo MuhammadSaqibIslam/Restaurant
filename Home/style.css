@@ -153,13 +153,27 @@ nav {
 
 /* Our Story start */
 .story-container {
-    background-color: aqua;
     width: 100%;
-    height: 430px;
+    /* height: 430px; */
+    height: 502px;
     margin-top: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 26px;
+    padding: 0 48px;
+    position: relative;
+}
+.story-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+.pizza {
+    position: absolute;
+    right: 48px;
+    bottom: -40px;
 }
 
 .center {
@@ -167,13 +181,11 @@ nav {
     flex-direction: column;
     width: 540px;
     text-align: center;
+    height: auto;
 }
 
 .heading-design {
-    /* display: flex;
-    flex-direction: column; */
     width: 540px;
-    background-color: aliceblue;
     padding-bottom: 32px;
 }
 
@@ -192,12 +204,11 @@ nav {
     color: #666;
     justify-content: center;
     align-items: center;
+    height: 160px;
 }
 
 .features3 {
-    background-color: antiquewhite;
     width: 540px;
-    height: 106px;
     padding-top: 44px;
     display: flex;
     justify-content: center;
