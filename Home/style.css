@@ -243,37 +243,21 @@ nav {
 /* Our Story end */
 /* Trending Recipes start */
 
-/* .Trending-content {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 204px;
-    background-color: gold;
-} */
+.Trending-content {
+    position: relative;
+    background-color: rgb(11, 209, 170);
+}
+
 
 .trending-cards {
-    background-color: rgb(201, 230, 60);
     display: flex;
     gap: 32px;
     justify-content: center;
-    z-index: 1;
     position: absolute;
     top: 204px;
     left: 50%;
-    transform: translateX(50%);
-}
-
-.bcg-img img {
-    margin-top: 122px;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.bcg-img {
-    position: relative;
-    /* margin-top: 122px; */
-    top: 72px;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .bcg-img::before {
@@ -283,6 +267,17 @@ nav {
     background: rgba(0, 0, 0, 0.35);
 }
 
+.bcg-img {
+ position: relative;
+}
+
+.bcg-img img {
+    margin-top: 122px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .img-des {
     display: flex;
     flex-direction: column;
@@ -290,7 +285,7 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
     gap: 0;
     top: 72px;
 }
