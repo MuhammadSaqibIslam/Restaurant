@@ -242,11 +242,25 @@ nav {
 
 /* Our Story end */
 /* Trending Recipes start */
+
+/* .Trending-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 204px;
+    background-color: gold;
+} */
+
 .trending-cards {
-    background-color: aquamarine;
+    background-color: rgb(201, 230, 60);
     display: flex;
     gap: 32px;
     justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 204px;
+    left: 50%;
+    transform: translateX(50%);
 }
 
 .bcg-img img {
@@ -258,7 +272,7 @@ nav {
 
 .bcg-img {
     position: relative;
-    margin-top: 122px;
+    /* margin-top: 122px; */
     top: 72px;
 }
 
@@ -268,8 +282,8 @@ nav {
     inset: 0;
     background: rgba(0, 0, 0, 0.35);
 }
-.img-des{
-    background-color: #e13841;
+
+.img-des {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,13 +291,26 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    gap: 0;
+    top: 72px;
 }
-.img-des h1{
+
+.des img {
+    margin-top: 0;
+    /* margin: 0;
+    padding: 0;
+    line-height: 0; */
+}
+
+.img-des h1 {
     font-size: 48px;
     font-weight: 600;
     line-height: 56px;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
+
 .card-1 {
     width: 350px;
     height: 375px;
